@@ -5,7 +5,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="1_iterator"/>
+	<classpathentry kind="src" path="2_adapter"/>
+	<classpathentry kind="src" path="3_templateMethod"/>
+	<classpathentry kind="src" path="4_FactoryMethod"/>
+	<classpathentry kind="src" path="5_Singleton"/>
+	<classpathentry kind="src" path="5_練習問題"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
