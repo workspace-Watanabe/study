@@ -13,5 +13,6 @@
 	<classpathentry kind="src" path="5_練習問題"/>
 	<classpathentry kind="src" path="6_prototype"/>
 	<classpathentry kind="src" path="7_Builder"/>
+	<classpathentry kind="src" path="8_AbstractFactory"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
