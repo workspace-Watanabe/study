@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:fragment="password_contents">
+		<p th:text="'あなたのパスワードは:' + ${checkForm.password}" />
+	</div>
+
+
+	<div th:fragment="error_contents" th:object="${checkForm}">
+		<ul>
+			<li th:each="error : ${#fields.detailedErrors()}">
+				<span th:text="${error.message}">Error message</span>
+			</li>
+		</ul>
+	</div>
+</body>

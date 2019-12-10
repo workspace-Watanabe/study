@@ -47,4 +47,6 @@ public class User {
 		 * 結婚ステータス
 		 */
 	private boolean marriage;
+
+	private String role;
 }

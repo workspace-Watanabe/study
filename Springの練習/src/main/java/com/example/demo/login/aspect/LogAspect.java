@@ -26,5 +26,24 @@ public class LogAspect {
 			throw e;
 		}
 	}
+	/** ====="execution(<戻り値><パッケージ名>.<クラス名>.<メソッド名>(<引数>)" ======**/
+	@Around("execution(* *..*.*UserDAO*.*(..))")
+	public Object daoLog(ProceedingJoinPoint jp) throws Throwable{
+
+		System.out.println("メソッド開始");
+
+		try {
+
+			Object result = jp.proceed();
+
+			System.out.println("メソッド終了" + jp.getSignature());
+
+			return result;
+
+		}catch(Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+	}
 
 }
