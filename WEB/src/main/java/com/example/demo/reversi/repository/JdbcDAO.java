@@ -133,6 +133,9 @@ public class JdbcDAO extends CreateTableTemplate {
 		}
 
 
+		/**
+		 * テーブルの中身をすべて取得
+		 */
 		@Override
 		public List<TABLE> Select() {
 

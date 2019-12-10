@@ -3,36 +3,39 @@
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 <link rel="stylesheet" th:href="@{css/reversi.css}">
-<link rel="stylesheet"
-	href="C:\Users\merut\Desktop\study\WEB\src\main\resources\static\css\reversi.css">
+
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-<header>
-	<h1>オセロ</h1>
-	<p>あなたの駒:白</p>
-</header>
-	<div th:classappend="
+	<div th:fragment="start_contents">
+		<header>
+			<h1>オセロ</h1>
+			<p>あなたの駒:白</p>
+		</header>
+		<div
+			th:classappend="
 	${(number == 4? 'box' : '')
 	+(number == 8? 'box2' : '')
 	+(number == 16? 'box3' : '')}">
 
-		<form action="/hello" th:each="line : ${table}">
-			<input type="submit"
-			th:classappend="${
+			<form th:action="@{/next}" th:each="line : ${table}" method="POST"
+				th:object="${othello}">
+
+				<input type="hidden" name="column" th:value="${line.column}">
+				<input type="hidden" name="line" th:value="${line.line}"> <input
+					type="hidden" name="status" th:value="${line.status}"> <input
+					type="submit"
+					th:classappend="${
 			(line.status == '配置なし'? 'test': '')
 			+(line.status == '黒'? 'black': '')
 			+(line.status == '白'? 'white': '')
 			}"
-
-
 			th:value="''" />
-		</form>
-	</div>
+			</form>
+		</div>
 
-<footer>
-	oseroo
-</footer>
+		<footer> </footer>
+	</div>
 </body>
 </html>

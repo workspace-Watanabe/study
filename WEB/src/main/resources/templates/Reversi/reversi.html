@@ -2,12 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
+<link rel="stylesheet" th:href="@{css/reversi.css}">
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-
-	<form th:action="@{/HELLO}" method="POST" th:object="${tableForm}">
+		<form th:action="@{/HELLO}" method="POST" th:object="${tableForm}">
 
 		<select name = "select" th:field = "*{num}">
 	 		<option th:each="map : ${boardOption}"
@@ -17,5 +17,6 @@
 
 	 	<input type="submit" value="この条件でゲームを開始する" />
 	</form>
+	<div th:include="__${contents}__"></div>
 </body>
 </html>

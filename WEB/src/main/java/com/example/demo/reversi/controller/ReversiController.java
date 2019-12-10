@@ -69,14 +69,17 @@ private Map<String,Integer> map;
 		 * @return reversi.HTML
 		 */
 	@GetMapping("/reversi")
-	public String getReversi(@ModelAttribute TableForm form) {
+	public String getReversi(@ModelAttribute TableForm form,
+			Model model) {
 
+		model.addAttribute("contents","");
 		return "Reversi/reversi";
 	}
 
 	@PostMapping("/HELLO")
 	public String getCheck(
 			@ModelAttribute TableForm form,
+			@ModelAttribute("othello") TABLE othello,
 			Model model
 			) {
 
@@ -89,9 +92,20 @@ private Map<String,Integer> map;
 		model.addAttribute("table",table);
 		model.addAttribute("number", list.get(list.size()-1));
 
-		/*model.addAttribute("contents");*/
+		model.addAttribute("contents","Reversi/tableCreate :: start_contents");
 
-		return "Reversi/tableCreate";
+		return "Reversi/reversi";
 
+	}
+
+	@PostMapping("next")
+	public String postNext(
+			@ModelAttribute("othello") TABLE othello,
+			Model model) {
+
+
+
+
+		return "index";
 	}
 }
