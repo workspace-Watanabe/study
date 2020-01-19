@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="2章_基本的なデータ構造"/>
+	<classpathentry kind="src" path="3章"/>
+	<classpathentry kind="src" path="4章_スタックとキュー"/>
+	<classpathentry kind="src" path="5章_再帰的アルゴリズム"/>
+	<classpathentry kind="src" path="6章_ソート"/>
+	<classpathentry kind="src" path="7章_集合"/>
+	<classpathentry kind="src" path="8章_文字列探索"/>
+	<classpathentry kind="src" path="9章_線形リスト"/>
+	<classpathentry kind="src" path="10章_木構造"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

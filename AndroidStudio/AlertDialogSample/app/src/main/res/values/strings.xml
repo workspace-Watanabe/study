@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">AlertDialogSample</string>
-    <string name="btn">ダイアログを表示する</string>
-    <string name="text">ダイアログの基本</string>
-</resources>
