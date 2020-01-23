@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">画面遷移サンプル</string>
+    <string name="tv_thx_title">注文完了</string>
+    <string name="tv_thx_desc">以下のメニューのご注文を受け付けました\nご注文ありがとうございます。</string>
+    <string name="bt_thx_back">リストに戻る</string>
+    <string name="tv_menu_unit">円</string>
+    <string name="menu_list_teishoku">定食</string>
+    <string name="menu_list_optinos_curry">カレー</string>
+</resources>
