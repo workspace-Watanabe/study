@@ -2,6 +2,8 @@ import java.util.*
 
 /**
  * 番兵法を用いた線形探索
+ *
+ * 
  */
 fun main(args:Array<String>){
     val scan = Scanner(System.`in`)

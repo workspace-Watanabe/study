@@ -2,6 +2,8 @@ import java.util.*
 
 /**
  * 2分探索
+ *
+ *
  */
 fun main(args:Array<String>){
     val scan = Scanner(System.`in`)
