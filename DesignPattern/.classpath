@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JRE-1.1"/>
 	<classpathentry kind="src" path="2_adapter"/>
 	<classpathentry kind="src" path="4_FactoryMethod"/>
 	<classpathentry kind="src" path="5_Singleton"/>
@@ -23,5 +20,7 @@
 	<classpathentry kind="src" path="1_iterator"/>
 	<classpathentry kind="src" path="17_Observer"/>
 	<classpathentry kind="src" path="18_Mement"/>
+	<classpathentry kind="src" path="19_State"/>
+	<classpathentry kind="src" path="20_Flyweight"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -11,7 +11,7 @@ public class FullBorder extends Border{
 	/**
 	 * 文字数は中身の両側に飾り文字分を加えたもの
 	 */
-	@Override
+
 	public int getColumns() {
 
 		return  this.display.getColumns() ;
