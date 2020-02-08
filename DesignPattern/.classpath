@@ -23,5 +23,6 @@
 	<classpathentry kind="src" path="19_State"/>
 	<classpathentry kind="src" path="20_Flyweight"/>
 	<classpathentry kind="src" path="21_Proxy"/>
+	<classpathentry kind="src" path="22_Command"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
